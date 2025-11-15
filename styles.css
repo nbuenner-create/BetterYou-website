@@ -1,0 +1,88 @@
+/* -------------- GLOBAL -------------- */
+.exercise-list {
+max-width: 600px;
+margin: 0 auto;
+padding: 20px;
+text-align: center;
+}
+
+
+.exercise-item {
+background: #141414;
+border-left: 4px solid #ff2a2a;
+padding: 15px;
+margin: 12px 0;
+font-size: 1.3rem;
+border-radius: 10px;
+cursor: pointer;
+transition: all .25s ease;
+animation: fadeUp .4s ease;
+}
+
+
+.exercise-item:hover {
+background: #1f1f1f;
+transform: translateX(5px) scale(1.02);
+box-shadow: 0 0 15px rgba(255,0,0,0.4);
+}
+
+
+/* -------------- MODAL -------------- */
+.modal {
+position: fixed;
+top: 0; left: 0;
+width: 100%; height: 100%;
+background: rgba(0,0,0,0.7);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.modal-content {
+background: #111;
+padding: 20px;
+border-radius: 12px;
+border: 2px solid #ff2a2a;
+max-width: 400px;
+text-align: center;
+box-shadow: 0 0 30px #ff2a2a;
+}
+
+
+.modal img {
+width: 90%;
+border-radius: 10px;
+margin: 10px 0 15px;
+}
+
+
+.close {
+float: right;
+cursor: pointer;
+font-size: 2rem;
+color: #ff2a2a;
+}
+
+
+.hidden { display: none; }
+
+
+/* -------------- ANIMATIONS -------------- */
+.fade-in { animation: fade 1.2s ease; }
+.fade-in-up { animation: fadeUp 1s ease; }
+.pop-in { animation: pop .4s ease; }
+
+
+@keyframes fade { from {opacity:0;} to {opacity:1;} }
+@keyframes fadeUp { from {opacity:0; transform:translateY(20px);} to {opacity:1; transform:translateY(0);} }
+@keyframes pop { from {transform:scale(.7); opacity:0;} to {transform:scale(1); opacity:1;} }
+
+
+/* -------------- MOBILE -------------- */
+@media (max-width: 600px) {
+.title { font-size: 2rem; }
+.day-btn { width: 90%; font-size: 1rem; }
+.exercise-item { font-size: 1.1rem; }
+.modal-content { width: 90%; }
+}
