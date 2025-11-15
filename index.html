@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Training Plan</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<!-- Animated Background -->
+<div class="bg-effect"></div>
+
+
+<header class="header">
+<h1 class="title fade-in">Dein Trainingsplan</h1>
+</header>
+
+
+<main class="main">
+<section class="days fade-in-up">
+<button class="day-btn" data-day="Montag">Montag</button>
+<button class="day-btn" data-day="Dienstag">Dienstag</button>
+<button class="day-btn" data-day="Mittwoch">Mittwoch</button>
+<button class="day-btn" data-day="Donnerstag">Donnerstag</button>
+<button class="day-btn" data-day="Freitag">Freitag</button>
+<button class="day-btn" data-day="Samstag">Samstag</button>
+<button class="day-btn" data-day="Sonntag">Sonntag</button>
+<button class="day-btn nutrition" data-day="Ernährung">Ernährung</button>
+</section>
+
+
+<section id="exercise-list" class="exercise-list fade-in-up"></section>
+</main>
+
+
+<!-- MODAL -->
+<div id="modal" class="modal hidden">
+<div class="modal-content pop-in">
+<span id="closeModal" class="close">&times;</span>
+<h2 id="modal-title"></h2>
+<img id="modal-img" src="" alt="Übung" />
+<p id="modal-text"></p>
+</div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
